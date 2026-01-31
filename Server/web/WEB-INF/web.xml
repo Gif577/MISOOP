@@ -1,0 +1,19 @@
+<web-app>
+    <servlet>
+        <servlet-name>DataService</servlet-name>
+        <servlet-class>com.caucho.hessian.server.HessianServlet</servlet-class>
+        <init-param>
+            <param-name>home-class</param-name>
+            <param-value>ru.eltech.studproject.server.DataServiceImp</param-value>
+        </init-param>
+        <init-param>
+            <param-name>home-api</param-name>
+            <param-value>ru.eltech.studproject.api.DataService</param-value>
+        </init-param>
+    </servlet>
+
+    <servlet-mapping>
+        <url-pattern>/DataService</url-pattern>
+        <servlet-name>DataService</servlet-name>
+    </servlet-mapping>
+</web-app>
